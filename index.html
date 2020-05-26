@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>WCAG Checklist</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <header class="header">
+                <h1 class="header__title">Чеклист соответствия требованиям WCAG</h1>
+                <div class="header__note">
+                    <strong class="header__warning">Внимание!</strong>
+                    <p class="header__text">
+                        Следующий перечень не является переводом стандарта WCAG — это чеклист-рекомендация по внедрению
+                        доступности. Это
+                        упрощённая подача <a href="https://www.w3.org/TR/WCAG21/">официальной рекомендации WCAG 2.1</a>.
+                        Является переводом <a href="https://webaim.org/standards/wcag/checklist">чеклиста с сайта <span
+                                lang="en">WebAIM</span></a>
+                    </p>
+                </div>
+            </header>
+
+            <main class="checklist">
+                <section class="ckecklist__section">
+                    <header class="checklist__top">
+                        <h2 class="checklist__title">Воспринимаемость</h2>
+                        <p class="checklist__description">
+                            Веб-контент создан для того, чтобы его можно было потреблять различными чувствами:
+                            зрительными, слуховыми и/или осязательными.
+                        </p>
+                    </header>
+
+                    <section class="checklist__division">
+                        <header class="checklist__header">
+                            <h3 class="checklist__caption">
+                                1.1 Текстовые альтернативы
+                            </h3>
+                            <p class="checklist__caption-desc">
+                                Текстовая альтернатива: предоставить текстовое описание для нетекстового контента.
+                            </p>
+                        </header>
+
+                        <section class="checklist__item">
+                            <h4 class="checklist__item-title">
+                                <a href="https://www.w3.org/TR/WCAG21/#non-text-content"> 1.1.1 Нетекстовой контент
+                                    (A)</a>
+                            </h4>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">Все недекоративные изображения должны иметь
+                                        соответствующий альтернативный текст.</p>
+                                </div>   
+                            </label>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">Декоративные изображения, не влияющие на контент и
+                                        не дополняющие его, имеют пустое значение атрибута alt="" или вставлены фоновым
+                                        изображением. Все связанные с контентом изображения имеют описывающий
+                                        альтернативный текст.</p>
+                                </div>
+                            </label>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">Для комплексных изображений есть описание в
+                                        контексте
+                                        или же на отдельной странице, на которую предоставлена ссылка.</p>
+                                </div>
+                            </label>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">Значение кнопок в формах описывают их назначение.
+                                    </p>
+                                </div>
+                            </label>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">У полей ввода в формах есть соответствующий им
+                                        текстовый
+                                        лейбл.</p>
+                                </div>
+                            </label>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">Мультимедийный контент описывается с помощью доступного
+                                        текста.</p>
+                                </div>
+                            </label>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">Элементы <span lang="en">iframe </span>должны быть
+                                        описаны надлежащим образом.</p>
+                                </div>
+                            </label>
+                        </section>
+                    </section>
+
+                    <section class="checklist__division">
+                        <header class="checklist__header">
+                            <h3 class="checklist__caption">
+                                1.2 Динамичный медиа-контент
+                            </h3>
+                            <p class="checklist__caption-desc">
+                                Предоставьте альтернативу медиа-контенту
+                            </p>
+                            <p class="note note--lg">
+                                <strong class="note__warning">Примечание: </strong> Если аудио или видео обозначены
+                                альтернативной веб-контенту (к примеру, аудиоверсия или версия страницы на языке
+                                жестов), тогда сам веб-контент считается альтернативным.
+                            </p>
+                        </header>
+
+                        <section class="checklist__item">
+                            <h4 class="checklist__item-title">
+                                <a href="https://www.w3.org/TR/WCAG21/#audio-only-and-video-only-prerecorded">1.2.1
+                                    Аудио и видео (в записи) (A)</a>
+                            </h4>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">Для предзаписанного аудио предоставлена
+                                        эквивалентная
+                                        ему расшифровка.</p>
+                                </div>
+                            </label>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">Для предзаписанного видео предоставлена
+                                        эквивалентная
+                                        ему расшифровка или аудио-описание только в том случае, если видео не является
+                                        декоративным.</p>
+                                </div>
+                            </label>
+                        </section>
+
+                        <section class="checklist__item">
+                            <h4 class="checklist__item-title">
+                                <a href="https://www.w3.org/TR/WCAG21/#captions-prerecorded">1.2.2 Титры (в записи)
+                                    (A)</a>
+                            </h4>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">Титры предоставляются для предзаписанного видео.</p>
+                                </div>
+                            </label>
+                        </section>
+
+                        <section class="checklist__item">
+                            <h4 class="checklist__item-title">
+                                <a
+                                    href="https://www.w3.org/TR/WCAG21/#audio-description-or-media-alternative-prerecorded">1.2.3
+                                    Аудио-описание или медиа-альтернатива (в записи) (A)</a>
+                            </h4>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">Титры <strong>или</strong> аудио-описание должны быть 
+                                        предоставлены для предзаписанного видео.</p>
+                                    <p class="note note--sm">
+                                        <strong class="note__warning">Примечание: </strong> Требуется только при наличии
+                                        соответствующего визуального контента, который не представлен в аудио.
+                                    </p>
+                                </div>
+                            </label>
+                        </section>
+
+                        <section class="checklist__item">
+                            <h4 class="checklist__item-title">
+                                <a href="https://www.w3.org/TR/WCAG21/#captions-live">1.2.4
+                                    Титры («живые») (AA)</a>
+                            </h4>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">Титры предоставляются для всего «живого» аудио-контента.</p>
+                                </div>
+                            </label>
+                        </section>
+
+                        <section class="checklist__item">
+                            <h4 class="checklist__item-title">
+                                <a href="https://www.w3.org/TR/WCAG21/#audio-description-prerecorded">1.2.5. Аудио-описание (в записи) (AA)</a>
+                            </h4>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">Титры предоставляются для всего «живого» аудио-контента в синхронизированном медиа-контенте.</p>
+                                </div>
+                            </label>
+                        </section>
+
+                    </section>
+                </section>
+
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
