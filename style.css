@@ -62,8 +62,8 @@ a:hover {
 }
 
 .header__note {
-    border: 0.2rem solid red;
-    border-left: 0.3rem solid red;
+    border: 0.1rem solid red;
+    border-left: 0.15rem solid red;
     border-radius: 0.2em;
     padding: 0.5rem;
     padding-left: 0.8rem;
@@ -85,8 +85,8 @@ a:hover {
 }
 
 .checklist__division {
-    border-left: 0.3rem solid red;
-    border-bottom: 0.2rem solid red;
+    border-left: 0.15rem solid red;
+    border-bottom: 0.1rem solid red;
     border-bottom-left-radius: 0.2rem;
     padding-left: 0.8rem;
     margin-bottom: 3rem;
@@ -111,6 +111,11 @@ a:hover {
     margin-bottom: 0.5em;
 }
 
+.checklist__item-subtitle {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
 .checklist__item-hidden {
     position: absolute;
     -webkit-appearance: none;
@@ -124,6 +129,7 @@ a:hover {
 
 .checklist__item-input {
     position: relative;
+    display: block;
     width: 1.5rem;
     height: 1.5rem;
     border: 0.2rem solid black;
