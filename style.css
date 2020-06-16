@@ -150,6 +150,7 @@ a:hover {
     height: 45%;
     border-left: 0.2em solid red;
     border-bottom: 0.2em solid red;
+    color: #000000;
     border-bottom-left-radius: 0.1em;
     transform: translate(-50%, -50%) rotate(-50deg);
     left: 50%;

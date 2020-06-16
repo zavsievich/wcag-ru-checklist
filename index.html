@@ -1466,6 +1466,339 @@
 
                 <section class="checklist__section">
                     <header class="checklist__top">
+                        <h2 class="checklist__title">Понятность</h2>
+                        <p class="checklist__description">
+                            Информация и управление интерфейсом пользователя должны быть понятными.
+                        </p>
+                    </header>
+
+                    <section class="checklist__division">
+                        <header class="checklist__header">
+                            <h3 class="checklist__caption">
+                                3.1. Удобочитаемость
+                            </h3>
+                            <p class="checklist__caption-desc">
+                                Сделайте текстовой контент удобочитаемым и понятным.
+                            </p>
+                        </header>
+
+                        <article class="checklist__item">
+                            <h4 class="checklist__item-title">
+                                <a href="https://www.w3.org/TR/WCAG21/#language-of-page">3.1.1 Язык страницы (А)</a>
+                            </h4>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">
+                                        Язык страницы определяется с помощью атрибута HTML lang (например, &lt;html lang
+                                        = &quot;ru&quot;&gt;).
+                                    </p>
+                                </div>
+                            </label>
+                        </article>
+
+                        <article class="checklist__item">
+                            <h4 class="checklist__item-title">
+                                <a href="https://www.w3.org/TR/WCAG21/#language-of-parts">3.1.2 Язык частей страницы (АА)</a>
+                            </h4>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">
+                                        Язык содержимого страницы на другом языке идентифицируется с использованием
+                                        атрибута lang (например, &lt;blockquote lang = &quot;es&quot;&gt;).
+                                    </p>
+                                </div>
+                            </label>
+                        </article>
+
+                        <article class="checklist__item">
+                            <h4 class="checklist__item-title">
+                                <a href="https://www.w3.org/TR/WCAG21/#unusual-words">3.1.3 Необычные слова
+                                    (ААА)</a>
+                            </h4>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">
+                                        Слова, которые могут быть неоднозначными, незнакомыми или использоваться очень
+                                        специфическим образом, определяются с помощью смежного текста, списка
+                                        определений, глоссария или другого подходящего метода.
+                                    </p>
+                                </div>
+                            </label>
+                        </article>
+
+                        <article class="checklist__item">
+                            <h4 class="checklist__item-title">
+                                <a href="https://www.w3.org/TR/WCAG21/#abbreviations">3.1.4 Аббревиатуры (ААА)</a>
+                            </h4>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">
+                                        Значение незнакомого сокращения обеспечивается расширением его при первом
+                                        использовании, использованием элемента &lt;abbr&gt; или ссылкой на определение
+                                        или глоссарий.
+                                    </p>
+                                </div>
+                            </label>
+                        </article>
+
+                        <article class="checklist__item">
+                            <h4 class="checklist__item-title">
+                                <a href="https://www.w3.org/TR/WCAG21/#reading-level">3.1.5 Уровень чтения (ААА)</a>
+                            </h4>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">
+                                        Более понятная альтернатива предоставляется для контента, который является более
+                                        продвинутым, чем это может разумно прочитать человек с примерно 9-летним
+                                        начальным образованием.
+                                    </p>
+                                </div>
+                            </label>
+                        </article>
+
+                        <article class="checklist__item">
+                            <h4 class="checklist__item-title">
+                                <a href="https://www.w3.org/TR/WCAG21/#pronunciation">3.1.6 Произношение (ААА)</a>
+                            </h4>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">
+                                        Если произношение слова имеет жизненно важное значение для понимания этого
+                                        слова, его произношение предоставляется сразу после слова или через ссылку или
+                                        глоссарий.
+                                    </p>
+                                </div>
+                            </label>
+                        </article>
+                    </section>
+
+                    <section class="checklist__division">
+                        <header class="checklist__header">
+                            <h3 class="checklist__caption">
+                                3.2. Предсказуемость
+                            </h3>
+                            <p class="checklist__caption-desc">
+                                Сделайте появление веб-страниц и управление ими предсказуемым.
+                            </p>
+                        </header>
+
+                        <article class="checklist__item">
+                            <h4 class="checklist__item-title">
+                                <a href="https://www.w3.org/TR/WCAG21/#on-focus">3.2.1. По получению фокуса (А)</a>
+                            </h4>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">
+                                        Когда элемент страницы получает фокус, это не приводит к существенному изменению
+                                        страницы, появлению всплывающего окна, дополнительному изменению фокуса
+                                        клавиатуры или любому другому изменению, которое может сбить с толку или
+                                        дезориентировать пользователя.
+                                    </p>
+                                </div>
+                            </label>
+                        </article>
+
+                        <article class="checklist__item">
+                            <h4 class="checklist__item-title">
+                                <a href="https://www.w3.org/TR/WCAG21/#on-input">3.2.2. По вводу (А)</a>
+                            </h4>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">
+                                        Когда пользователь вводит информацию или взаимодействует с элементом управления,
+                                        это не приводит к существенному изменению страницы, появлению всплывающего окна,
+                                        дополнительному изменению фокуса клавиатуры или любому другому изменению,
+                                        которое может сбить с толку или дезориентировать пользователя если пользователь
+                                        не уведомлен об изменении заранее.
+                                    </p>
+                                </div>
+                            </label>
+                        </article>
+
+                        <article class="checklist__item">
+                            <h4 class="checklist__item-title">
+                                <a href="https://www.w3.org/TR/WCAG21/#consistent-navigation">3.2.3. Единообразная
+                                    навигация (АА)</a>
+                            </h4>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">
+                                        Навигационные ссылки, которые повторяются на веб-страницах, не меняют порядок
+                                        при навигации по сайту.
+                                    </p>
+                                </div>
+                            </label>
+                        </article>
+
+                        <article class="checklist__item">
+                            <h4 class="checklist__item-title">
+                                <a href="https://www.w3.org/TR/WCAG21/#consistent-identification">3.2.4. Единообразная
+                                    идентификация (АА)</a>
+                            </h4>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">
+                                        Элементы, которые имеют одинаковую функциональность на нескольких веб-страницах,
+                                        последовательно идентифицируются. Например, окно поиска в верхней части сайта
+                                        всегда должно быть помечено одинаково.
+                                    </p>
+                                </div>
+                            </label>
+                        </article>
+
+                        <article class="checklist__item">
+                            <h4 class="checklist__item-title">
+                                <a href="https://www.w3.org/TR/WCAG21/#change-on-request">3.2.5. Изменение по запросу
+                                    (ААА)</a>
+                            </h4>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">
+                                        Пользователь должен инициировать существенные изменения на странице, появление
+                                        всплывающих окон, неконтролируемые изменения фокуса клавиатуры или любые другие
+                                        изменения, которые могут запутать или дезориентировать пользователя. В качестве
+                                        альтернативы пользователю предоставляется возможность отключить такие изменения.
+                                    </p>
+                                </div>
+                            </label>
+                        </article>
+                    </section>
+
+                    <section class="checklist__division">
+                        <header class="checklist__header">
+                            <h3 class="checklist__caption">
+                                3.3. Помощь при вводе
+                            </h3>
+                            <p class="checklist__caption-desc">
+                                Помогите пользователям избегать ошибок и исправлять их.
+                            </p>
+                        </header>
+
+                        <article class="checklist__item">
+                            <h4 class="checklist__item-title">
+                                <a href="https://www.w3.org/TR/WCAG21/#error-identification">3.3.1. Обозначение ошибок (А)</a>
+                            </h4>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">
+                                        Обязательные элементы формы или элементы формы, которые требуют определенного формата, значения или длины, предоставляют эту информацию в метке элемента.
+                                    </p>
+                                </div>
+                            </label>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">
+                                        Ошибки при <a href="https://webaim.org/techniques/formvalidation/">проверке формы</a> эффективны, интуитивно понятны и доступны. Ошибка четко идентифицирована, обеспечен быстрый доступ к проблемному элементу, и пользователь может легко исправить ошибку и повторно отправить форму.
+                                    </p>
+                                </div>
+                            </label>
+                        </article>
+
+                        <article class="checklist__item">
+                            <h4 class="checklist__item-title">
+                                <a href="https://www.w3.org/TR/WCAG21/#labels-or-instructions">3.3.2. Ярлыки или инструкции (А)</a>
+                            </h4>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">
+                                        Достаточные метки, подсказки и инструкции для требуемых интерактивных элементов предоставляются через инструкции, примеры, правильно расположенные метки форм и / или наборы / легенды полей.
+                                    </p>
+                                </div>
+                            </label>
+                        </article>
+
+                        <article class="checklist__item">
+                            <h4 class="checklist__item-title">
+                                <a href="https://www.w3.org/TR/WCAG21/#error-suggestion">3.3.3. Подсказки при ошибках (АА)</a>
+                            </h4>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">
+                                        Если обнаружена ошибка ввода (посредством проверки на стороне клиента или на стороне сервера), предоставляются предложения по своевременному и доступному исправлению ввода.
+                                    </p>
+                                </div>
+                            </label>
+                        </article>
+
+                        <article class="checklist__item">
+                            <h4 class="checklist__item-title">
+                                <a href="https://www.w3.org/TR/WCAG21/#minimize-error-reversible">3.3.4. Предотвращение ошибок (юридических, финансовых, управления данными) (АА)</a>
+                            </h4>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">
+                                        Если пользователь может изменить или удалить юридические, финансовые или тестовые данные, изменения / удаления могут быть отменены, проверены или подтверждены.
+                                    </p>
+                                </div>
+                            </label>
+                        </article>
+
+                        <article class="checklist__item">
+                            <h4 class="checklist__item-title">
+                                <a href="https://www.w3.org/TR/WCAG21/#help">3.3.5. Справка (ААА)</a>
+                            </h4>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">
+                                        Инструкции и подсказки предоставляются в контексте, чтобы помочь в заполнении и отправке формы.
+                                    </p>
+                                </div>
+                            </label>
+                        </article>
+
+                        <article class="checklist__item">
+                            <h4 class="checklist__item-title">
+                                <a href="https://www.w3.org/TR/WCAG21/#error-prevention-all">3.3.6. Предотвращение ошибок (любых) (ААА)</a>
+                            </h4>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">
+                                        Если пользователь может предоставить информацию, отправка является обратимой, проверенной или подтвержденной.
+                                    </p>
+                                </div>
+                            </label>
+                        </article>
+                    </section>
+                </section>
+
+                <section class="checklist__section">
+                    <header class="checklist__top">
                         <h2 class="checklist__title">Устойчивость</h2>
                         <p class="checklist__description">
                             Контент должен быть достаточно устойчив к обработке, чтобы он мог быть представлен с помощью
@@ -1479,7 +1812,8 @@
                                 4.1. Совместимость
                             </h3>
                             <p class="checklist__caption-desc">
-                                Максимально увеличьте совместимость с существующими и будущими агентами пользователя, включая ассистивные технологии.
+                                Максимально увеличьте совместимость с существующими и будущими агентами пользователя,
+                                включая ассистивные технологии.
                             </p>
                         </header>
 
@@ -1492,7 +1826,8 @@
                                 <span class="checklist__item-input" aria-hidden="true"></span>
                                 <div>
                                     <p class="checklist__item-desc">
-                                        Значительные ошибки проверки / разбора HTML / XHTML исключены. Проверьте на <a href="http://validator.w3.org/">http://validator.w3.org/</a>
+                                        Значительные ошибки проверки / разбора HTML / XHTML исключены. Проверьте на <a
+                                            href="http://validator.w3.org/">http://validator.w3.org/</a>
                                     </p>
                                 </div>
                             </label>
@@ -1500,14 +1835,17 @@
 
                         <article class="checklist__item">
                             <h4 class="checklist__item-title">
-                                <a href="https://www.w3.org/TR/WCAG21/#name-role-value"> 4.1.2. Имя, роль, значение (А)</a>
+                                <a href="https://www.w3.org/TR/WCAG21/#name-role-value"> 4.1.2. Имя, роль, значение
+                                    (А)</a>
                             </h4>
                             <label class="checklist__item-label">
                                 <input class="checklist__item-hidden" type="checkbox" name="" id="">
                                 <span class="checklist__item-input" aria-hidden="true"></span>
                                 <div>
                                     <p class="checklist__item-desc">
-                                        Разметка используется таким образом, чтобы облегчить доступ. Это включает в себя следование спецификациям HTML / XHTML и правильное использование форм, меток форм, заголовков фреймов и т. Д.
+                                        Разметка используется таким образом, чтобы облегчить доступ. Это включает в себя
+                                        следование спецификациям HTML / XHTML и правильное использование форм, меток
+                                        форм, заголовков фреймов и т. Д.
                                     </p>
                                 </div>
                             </label>
@@ -1517,7 +1855,8 @@
                                 <span class="checklist__item-input" aria-hidden="true"></span>
                                 <div>
                                     <p class="checklist__item-desc">
-                                        ARIA используется соответствующим образом для улучшения доступности, когда HTML недостаточно.
+                                        ARIA используется соответствующим образом для улучшения доступности, когда HTML
+                                        недостаточно.
                                     </p>
                                 </div>
                             </label>
@@ -1525,14 +1864,17 @@
 
                         <article class="checklist__item">
                             <h4 class="checklist__item-title">
-                                <a href="https://www.w3.org/TR/WCAG21/#status-messages">4.1.3. Сообщения о состоянии (АА)</a>
+                                <a href="https://www.w3.org/TR/WCAG21/#status-messages">4.1.3. Сообщения о состоянии
+                                    (АА)</a>
                             </h4>
                             <label class="checklist__item-label">
                                 <input class="checklist__item-hidden" type="checkbox" name="" id="">
                                 <span class="checklist__item-input" aria-hidden="true"></span>
                                 <div>
                                     <p class="checklist__item-desc">
-                                        Если представлено важное сообщение о состоянии, и фокус не установлен на это сообщение, сообщение должно быть объявлено пользователям программы чтения с экрана, как правило, через оповещение ARIA или область реального времени.
+                                        Если представлено важное сообщение о состоянии, и фокус не установлен на это
+                                        сообщение, сообщение должно быть объявлено пользователям программы чтения с
+                                        экрана, как правило, через оповещение ARIA или область реального времени.
                                     </p>
                                 </div>
                             </label>
