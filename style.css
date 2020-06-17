@@ -6,6 +6,7 @@
 
 html {
     font-size: 125% !important;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -29,6 +30,17 @@ a:hover {
     outline: 0.2em solid red;
     outline-offset: 0.1em;
     text-decoration: none;
+}
+
+.hidden-link {
+    position: absolute;
+    font-size: 1.5rem;
+    transform: translateY(-120%);
+    transition: color 0.3s, text-decoration-style 0.3s, transform 0.3s;
+}
+
+.hidden-link:focus {
+    transform: translate(30%, 30%);
 }
 
 .note--lg {
@@ -67,6 +79,7 @@ a:hover {
     border-radius: 0.2em;
     padding: 0.5rem;
     padding-left: 0.8rem;
+    margin-bottom: 1.5rem;
 }
 
 .header__warning {
@@ -74,6 +87,35 @@ a:hover {
     font-weight: bold;
     font-size: 1.5rem;
 }
+
+.nav {
+    border-left: 0.15rem solid red;
+    padding-left: 0.8rem;
+    border-bottom: 0.1rem solid red;
+}
+
+.nav__list {
+    padding-left: 0.8rem;
+}
+
+.nav__item {
+    position: relative;
+    /* display: flex; */
+    align-items: center;
+    /* padding-left: 0.8em; */
+    margin-bottom: 0.5em;
+}
+
+/* .nav__item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background-color: #000000;
+} */
 
 .checklist__section {
     margin-bottom: 1rem;

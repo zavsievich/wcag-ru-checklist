@@ -10,6 +10,10 @@
 </head>
 
 <body>
+    <a href="#main" class="hidden-link">
+        Перейти к содержимому
+    </a>
+
     <div class="wrapper">
         <div class="container">
             <header class="header">
@@ -24,12 +28,43 @@
                                 lang="en">WebAIM</span></a>
                     </p>
                 </div>
+
+                <nav class="nav">
+                    <ol class="nav__list">
+                        <li class="nav__item">
+                            <a href="#perceivable">
+                                Восприятие
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#operable">
+                                Управляемость
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#understandable">
+                                Понятность
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#robust">
+                                Надёжность
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
             </header>
 
-            <main class="checklist">
-                <section class="checklist__section">
+            <main class="checklist" id="main">
+                <section class="checklist__section" id="perceivable">
                     <header class="checklist__top">
-                        <h2 class="checklist__title">Воспринимаемость</h2>
+                        <h2 class="checklist__title">
+                            <a class="checklist__link" href="#perceivable">#</a>
+                             Восприятие
+                            </h2>
                         <p class="checklist__description">
                             Веб-контент создан для того, чтобы его можно было потреблять различными чувствами:
                             зрительными, слуховыми и/или осязательными.
@@ -831,9 +866,12 @@
 
                 </section>
 
-                <section class="checklist__section">
+                <section class="checklist__section" id="operable">
                     <header class="checklist__top">
-                        <h2 class="checklist__title">Управляемость</h2>
+                        <h2 class="checklist__title">
+                            <a class="checklist__link" href="#operable">#</a>
+                            Управляемость
+                        </h2>
                         <p class="checklist__description">
                             Компоненты интерфейса пользователя и навигационные элементы должны быть управляемы.
                         </p>
@@ -1464,9 +1502,12 @@
 
                 </section>
 
-                <section class="checklist__section">
+                <section class="checklist__section" id="understandable">
                     <header class="checklist__top">
-                        <h2 class="checklist__title">Понятность</h2>
+                        <h2 class="checklist__title">
+                            <a class="checklist__link" href="#understandable">#</a>
+                            Понятность
+                        </h2>
                         <p class="checklist__description">
                             Информация и управление интерфейсом пользователя должны быть понятными.
                         </p>
@@ -1797,9 +1838,12 @@
                     </section>
                 </section>
 
-                <section class="checklist__section">
+                <section class="checklist__section" id="robust">
                     <header class="checklist__top">
-                        <h2 class="checklist__title">Устойчивость</h2>
+                        <h2 class="checklist__title">
+                            <a class="checklist__link" href="#robust">#</a>
+                            Надёжность
+                        </h2>
                         <p class="checklist__description">
                             Контент должен быть достаточно устойчив к обработке, чтобы он мог быть представлен с помощью
                             разнообразных агентов пользователя, включая ассистивные технологии.
