@@ -21,7 +21,7 @@
                 <div class="header__note">
                     <strong class="header__warning">Внимание!</strong>
                     <p class="header__text">
-                        Следующий перечень не является переводом стандарта WCAG — это чеклист-рекомендация по внедрению
+                        Следующий перечень не перевод стандарта WCAG, а чеклист-рекомендация по внедрению
                         доступности. Это
                         упрощённая подача <a href="https://www.w3.org/TR/WCAG21/">официальной рекомендации WCAG 2.1</a>.
                         Является переводом <a href="https://webaim.org/standards/wcag/checklist">чеклиста с сайта <span
@@ -63,8 +63,8 @@
                     <header class="checklist__top">
                         <h2 class="checklist__title">
                             <a class="checklist__link" href="#perceivable">#</a>
-                             Восприятие
-                            </h2>
+                            Восприятие
+                        </h2>
                         <p class="checklist__description">
                             Веб-контент создан для того, чтобы его можно было потреблять различными чувствами:
                             зрительными, слуховыми и/или осязательными.
@@ -77,7 +77,7 @@
                                 1.1 Текстовые альтернативы
                             </h3>
                             <p class="checklist__caption-desc">
-                                Текстовая альтернатива: предоставить текстовое описание для нетекстового контента.
+                                Предоставьте текстовую альтернативу для всего нетекстового контента.
                             </p>
                         </header>
 
@@ -90,18 +90,16 @@
                                 <input class="checklist__item-hidden" type="checkbox" name="" id="">
                                 <span class="checklist__item-input" aria-hidden="true"></span>
                                 <div>
-                                    <p class="checklist__item-desc">Все недекоративные изображения должны иметь
-                                        соответствующий альтернативный текст.</p>
+                                    <p class="checklist__item-desc">Изображения, изображения в кнопках форм и карты
+                                        изображений с горячими точками должны иметь соответствующий, эквивалентный
+                                        <a href="https://webaim.org/techniques/alttext/">альтернативный текст</a>.</p>
                                 </div>
                             </label>
                             <label class="checklist__item-label">
                                 <input class="checklist__item-hidden" type="checkbox" name="" id="">
                                 <span class="checklist__item-input" aria-hidden="true"></span>
                                 <div>
-                                    <p class="checklist__item-desc">Декоративные изображения, не влияющие на контент и
-                                        не дополняющие его, имеют пустое значение атрибута alt="" или вставлены фоновым
-                                        изображением. Все связанные с контентом изображения имеют описывающий
-                                        альтернативный текст.</p>
+                                    <p class="checklist__item-desc">Изображения, не передающие контент, являются декоративными или содержат контент, уже описанный текстом, имеют пустое значение атрибута alt="" или вставлены фоном.</p>
                                 </div>
                             </label>
                             <label class="checklist__item-label">
@@ -126,25 +124,22 @@
                                 <span class="checklist__item-input" aria-hidden="true"></span>
                                 <div>
                                     <p class="checklist__item-desc">У полей ввода в формах есть соответствующий им
-                                        текстовый
-                                        лейбл.</p>
+                                         <a href="https://webaim.org/techniques/forms/controls">текстовый лейбл.</a></p>
                                 </div>
                             </label>
                             <label class="checklist__item-label">
                                 <input class="checklist__item-hidden" type="checkbox" name="" id="">
                                 <span class="checklist__item-input" aria-hidden="true"></span>
                                 <div>
-                                    <p class="checklist__item-desc">Мультимедийный контент описывается с помощью
-                                        доступного
-                                        текста.</p>
+                                    <p class="checklist__item-desc">Мультимедийный контент описан доступным
+                                        текстом.</p>
                                 </div>
                             </label>
                             <label class="checklist__item-label">
                                 <input class="checklist__item-hidden" type="checkbox" name="" id="">
                                 <span class="checklist__item-input" aria-hidden="true"></span>
                                 <div>
-                                    <p class="checklist__item-desc">Элементы <span lang="en">iframe </span>должны быть
-                                        описаны надлежащим образом.</p>
+                                    <p class="checklist__item-desc">Элементы <span lang="en">iframe </span> <a href="https://webaim.org/techniques/frames/">озаглавлены</a> надлежащим образом.</p>
                                 </div>
                             </label>
                         </article>
@@ -1541,7 +1536,8 @@
 
                         <article class="checklist__item">
                             <h4 class="checklist__item-title">
-                                <a href="https://www.w3.org/TR/WCAG21/#language-of-parts">3.1.2 Язык частей страницы (АА)</a>
+                                <a href="https://www.w3.org/TR/WCAG21/#language-of-parts">3.1.2 Язык частей страницы
+                                    (АА)</a>
                             </h4>
                             <label class="checklist__item-label">
                                 <input class="checklist__item-hidden" type="checkbox" name="" id="">
@@ -1739,14 +1735,16 @@
 
                         <article class="checklist__item">
                             <h4 class="checklist__item-title">
-                                <a href="https://www.w3.org/TR/WCAG21/#error-identification">3.3.1. Обозначение ошибок (А)</a>
+                                <a href="https://www.w3.org/TR/WCAG21/#error-identification">3.3.1. Обозначение ошибок
+                                    (А)</a>
                             </h4>
                             <label class="checklist__item-label">
                                 <input class="checklist__item-hidden" type="checkbox" name="" id="">
                                 <span class="checklist__item-input" aria-hidden="true"></span>
                                 <div>
                                     <p class="checklist__item-desc">
-                                        Обязательные элементы формы или элементы формы, которые требуют определенного формата, значения или длины, предоставляют эту информацию в метке элемента.
+                                        Обязательные элементы формы или элементы формы, которые требуют определенного
+                                        формата, значения или длины, предоставляют эту информацию в метке элемента.
                                     </p>
                                 </div>
                             </label>
@@ -1755,22 +1753,10 @@
                                 <span class="checklist__item-input" aria-hidden="true"></span>
                                 <div>
                                     <p class="checklist__item-desc">
-                                        Ошибки при <a href="https://webaim.org/techniques/formvalidation/">проверке формы</a> эффективны, интуитивно понятны и доступны. Ошибка четко идентифицирована, обеспечен быстрый доступ к проблемному элементу, и пользователь может легко исправить ошибку и повторно отправить форму.
-                                    </p>
-                                </div>
-                            </label>
-                        </article>
-
-                        <article class="checklist__item">
-                            <h4 class="checklist__item-title">
-                                <a href="https://www.w3.org/TR/WCAG21/#labels-or-instructions">3.3.2. Ярлыки или инструкции (А)</a>
-                            </h4>
-                            <label class="checklist__item-label">
-                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
-                                <span class="checklist__item-input" aria-hidden="true"></span>
-                                <div>
-                                    <p class="checklist__item-desc">
-                                        Достаточные метки, подсказки и инструкции для требуемых интерактивных элементов предоставляются через инструкции, примеры, правильно расположенные метки форм и / или наборы / легенды полей.
+                                        Ошибки при <a href="https://webaim.org/techniques/formvalidation/">проверке
+                                            формы</a> эффективны, интуитивно понятны и доступны. Ошибка четко
+                                        идентифицирована, обеспечен быстрый доступ к проблемному элементу, и
+                                        пользователь может легко исправить ошибку и повторно отправить форму.
                                     </p>
                                 </div>
                             </label>
@@ -1778,14 +1764,17 @@
 
                         <article class="checklist__item">
                             <h4 class="checklist__item-title">
-                                <a href="https://www.w3.org/TR/WCAG21/#error-suggestion">3.3.3. Подсказки при ошибках (АА)</a>
+                                <a href="https://www.w3.org/TR/WCAG21/#labels-or-instructions">3.3.2. Ярлыки или
+                                    инструкции (А)</a>
                             </h4>
                             <label class="checklist__item-label">
                                 <input class="checklist__item-hidden" type="checkbox" name="" id="">
                                 <span class="checklist__item-input" aria-hidden="true"></span>
                                 <div>
                                     <p class="checklist__item-desc">
-                                        Если обнаружена ошибка ввода (посредством проверки на стороне клиента или на стороне сервера), предоставляются предложения по своевременному и доступному исправлению ввода.
+                                        Достаточные метки, подсказки и инструкции для требуемых интерактивных элементов
+                                        предоставляются через инструкции, примеры, правильно расположенные метки форм и
+                                        / или наборы / легенды полей.
                                     </p>
                                 </div>
                             </label>
@@ -1793,14 +1782,35 @@
 
                         <article class="checklist__item">
                             <h4 class="checklist__item-title">
-                                <a href="https://www.w3.org/TR/WCAG21/#minimize-error-reversible">3.3.4. Предотвращение ошибок (юридических, финансовых, управления данными) (АА)</a>
+                                <a href="https://www.w3.org/TR/WCAG21/#error-suggestion">3.3.3. Подсказки при ошибках
+                                    (АА)</a>
                             </h4>
                             <label class="checklist__item-label">
                                 <input class="checklist__item-hidden" type="checkbox" name="" id="">
                                 <span class="checklist__item-input" aria-hidden="true"></span>
                                 <div>
                                     <p class="checklist__item-desc">
-                                        Если пользователь может изменить или удалить юридические, финансовые или тестовые данные, изменения / удаления могут быть отменены, проверены или подтверждены.
+                                        Если обнаружена ошибка ввода (посредством проверки на стороне клиента или на
+                                        стороне сервера), предоставляются предложения по своевременному и доступному
+                                        исправлению ввода.
+                                    </p>
+                                </div>
+                            </label>
+                        </article>
+
+                        <article class="checklist__item">
+                            <h4 class="checklist__item-title">
+                                <a href="https://www.w3.org/TR/WCAG21/#minimize-error-reversible">3.3.4. Предотвращение
+                                    ошибок (юридических, финансовых, управления данными) (АА)</a>
+                            </h4>
+                            <label class="checklist__item-label">
+                                <input class="checklist__item-hidden" type="checkbox" name="" id="">
+                                <span class="checklist__item-input" aria-hidden="true"></span>
+                                <div>
+                                    <p class="checklist__item-desc">
+                                        Если пользователь может изменить или удалить юридические, финансовые или
+                                        тестовые данные, изменения / удаления могут быть отменены, проверены или
+                                        подтверждены.
                                     </p>
                                 </div>
                             </label>
@@ -1815,7 +1825,8 @@
                                 <span class="checklist__item-input" aria-hidden="true"></span>
                                 <div>
                                     <p class="checklist__item-desc">
-                                        Инструкции и подсказки предоставляются в контексте, чтобы помочь в заполнении и отправке формы.
+                                        Инструкции и подсказки предоставляются в контексте, чтобы помочь в заполнении и
+                                        отправке формы.
                                     </p>
                                 </div>
                             </label>
@@ -1823,14 +1834,16 @@
 
                         <article class="checklist__item">
                             <h4 class="checklist__item-title">
-                                <a href="https://www.w3.org/TR/WCAG21/#error-prevention-all">3.3.6. Предотвращение ошибок (любых) (ААА)</a>
+                                <a href="https://www.w3.org/TR/WCAG21/#error-prevention-all">3.3.6. Предотвращение
+                                    ошибок (любых) (ААА)</a>
                             </h4>
                             <label class="checklist__item-label">
                                 <input class="checklist__item-hidden" type="checkbox" name="" id="">
                                 <span class="checklist__item-input" aria-hidden="true"></span>
                                 <div>
                                     <p class="checklist__item-desc">
-                                        Если пользователь может предоставить информацию, отправка является обратимой, проверенной или подтвержденной.
+                                        Если пользователь может предоставить информацию, отправка является обратимой,
+                                        проверенной или подтвержденной.
                                     </p>
                                 </div>
                             </label>

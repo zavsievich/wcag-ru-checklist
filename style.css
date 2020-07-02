@@ -126,6 +126,10 @@ a:hover {
     max-width: 80%;
 }
 
+.checklist__title {
+    position: relative;
+}
+
 .checklist__division {
     border-left: 0.15rem solid red;
     border-bottom: 0.1rem solid red;
