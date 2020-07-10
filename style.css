@@ -9,6 +9,12 @@ html {
     scroll-behavior: smooth;
 }
 
+@media (max-width: 319px) {
+    html {
+        font-size: 100% !important;
+    }
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.5;
@@ -17,13 +23,15 @@ body {
 
 a {
     font-weight: bold;
-    color: red;
+    /* color: red; */
+    color: inherit;
+    font-weight: bold;
     text-decoration: underline;
     transition: color 0.3s, text-decoration-style 0.3s;
 }
 
 a:hover {
-    color: green;
+    color: red;
     text-decoration-style: dashed;
 }
 
@@ -34,14 +42,33 @@ a:hover {
 }
 
 .hidden-link {
+    color: red;
     position: absolute;
-    font-size: 1.5rem;
+    font-size: 2rem;
     transform: translateY(-120%);
     transition: color 0.3s, text-decoration-style 0.3s, transform 0.3s;
 }
 
 .hidden-link:focus {
+    position: fixed;
+    top: 1.5rem;
     transform: translate(30%, 30%);
+}
+
+.hidden-link:focus+.wrapper {
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+@media (max-width: 800px) {
+    .hidden-link {
+        font-size: 1rem;
+    }
+    .hidden-link:focus {
+        top: 1.5rem;
+        transform: translate(10%, 30%);
+    }
 }
 
 .note--lg {
@@ -65,16 +92,102 @@ a:hover {
 }
 
 .header {
+    padding: 1.2rem 0;
+    border-bottom: 0.15rem solid red;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+.header__nav {
+    flex: 0 1 45%;
+}
+
+.header__filters[data-filters="close"] .header__filters-list {
+    display: none;
+}
+
+.header__filters-btn {
+    color: inherit;
+    font: inherit;
+    font-weight: 600;
+    background: none;
+    border: 0.1em solid red;
+    border-radius: 0.3em;
+    padding: 0.2em 0.5em;
+    cursor: pointer;
+}
+
+.header__filters-btn:hover {
+    border-style: dashed;
+}
+
+.header__filters-btn:focus {
+    border-color: transparent;
+}
+
+.nav {
+    /* padding-left: 0.8rem; */
+    /* border-bottom: 0.1rem solid red; */
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+}
+
+.nav__item {
+    /* position: relative; */
+    margin-left: 5%;
+    /* display: flex; */
+    align-items: center;
+    /* padding-left: 0.8em; */
+    /* margin-bottom: 0.5em; */
+}
+
+.nav__item:first-child {
+    margin-left: 0;
+}
+
+@media (max-width: 1000px) {
+    .header {
+        padding: 1.5rem 0;
+    }
+    .header__container {
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 45rem;
+    }
+    .header__nav {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .nav__list {
+        flex-direction: column;
+    }
+    .nav__item {
+        margin-left: 0;
+        margin-bottom: 1em;
+    }
+}
+
+.hero {
     padding: 3rem 0 2rem;
 }
 
-.header__title {
+.hero__title {
     font-size: 2rem;
     line-height: 1.2;
     margin-bottom: 1rem;
 }
 
-.header__note {
+.hero__note {
     border: 0.1rem solid red;
     border-left: 0.15rem solid red;
     border-radius: 0.2em;
@@ -83,28 +196,10 @@ a:hover {
     margin-bottom: 1.5rem;
 }
 
-.header__warning {
+.hero__warning {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.5rem;
-}
-
-.nav {
-    border-left: 0.15rem solid red;
-    padding-left: 0.8rem;
-    border-bottom: 0.1rem solid red;
-}
-
-.nav__list {
-    padding-left: 0.8rem;
-}
-
-.nav__item {
-    position: relative;
-    /* display: flex; */
-    align-items: center;
-    /* padding-left: 0.8em; */
-    margin-bottom: 0.5em;
 }
 
 /* .nav__item::before {
@@ -146,6 +241,7 @@ a:hover {
 .checklist__item-label {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 1rem;
     cursor: pointer;
 }
@@ -188,6 +284,10 @@ a:hover {
 .checklist__item-hidden:focus+.checklist__item-input {
     outline: 0.2em dashed red;
     outline-offset: 0.1em;
+}
+
+.checklist__item-input+.checklist__item-desc {
+    flex: 1 0 calc(100% - 44px);
 }
 
 .checklist__item-hidden:checked+.checklist__item-input::before {
