@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="no-js">
 
 <head>
     <meta charset="UTF-8">
@@ -46,29 +46,31 @@
                 </nav>
 
                 <div class="header__filters" data-filters="close">
-                    <button class="header__filters-btn" data-filters-btn type="button">
+                    <button class="header__filters-btn" data-filters-btn="close" type="button">
                         Показать фильтры
                     </button>
-                    <ul class="header__filters-list" data-filters-list>
-                        <li class="header__filters-item">
-                            <label class="header__filters-label">
-                                <input type="checkbox">
-                                Уровень А
-                            </label>
-                        </li>
-                        <li class="header__filters-item">
-                            <label class="header__filters-label">
-                                <input type="checkbox">
-                                Уровень АА
-                            </label>
-                        </li>
-                        <li class="header__filters-item">
-                            <label class="header__filters-label">
-                                <input type="checkbox">
-                                Уровень ААА
-                            </label>
-                        </li>
-                    </ul>
+                    <div class="header__filters-wrap">
+                        <ul class="header__filters-list" data-filters-list>
+                            <li class="header__filters-item">
+                                <label class="header__filters-label">
+                                    <input type="checkbox" data-cbox="1">
+                                    Уровень А
+                                </label>
+                            </li>
+                            <li class="header__filters-item">
+                                <label class="header__filters-label">
+                                    <input type="checkbox" data-cbox="2">
+                                    Уровень АА
+                                </label>
+                            </li>
+                            <li class="header__filters-item">
+                                <label class="header__filters-label">
+                                    <input type="checkbox" data-cbox="3">
+                                    Уровень ААА
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>
@@ -1863,6 +1865,7 @@
         </main>
 
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

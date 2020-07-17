@@ -109,8 +109,27 @@ a:hover {
     flex: 0 1 45%;
 }
 
+.header__filters-wrap {
+    position: relative;
+}
+
+.header__filters-list {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background-color: white;
+    border: 0.1em solid red;
+}
+
 .header__filters[data-filters="close"] .header__filters-list {
     display: none;
+}
+
+.header__filters[data-filters="open"] .header__filters-list {
+    display: block;
 }
 
 .header__filters-btn {
@@ -130,6 +149,27 @@ a:hover {
 
 .header__filters-btn:focus {
     border-color: transparent;
+}
+
+.header__filters-btn[data-filters-btn="open"] {
+    border-bottom-color: transparent;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.header__filters-btn[data-filters-btn="open"]:hover {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-style: solid;
+}
+
+.header__filters-label {
+    display: flex;
+    cursor: pointer;
+}
+
+.header__filters-label input {
+    margin-right: 0.6em;
 }
 
 .nav {
@@ -241,6 +281,20 @@ a:hover {
 .checklist__header {
     padding-bottom: 0.8rem;
 }
+
+.no-js .checklist__item {
+    opacity: 1 !important;
+}
+
+/* .checklist__item {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.checklist__item.active {
+    opacity: 1;
+    pointer-events: initial;
+} */
 
 .checklist__item-label {
     position: relative;
