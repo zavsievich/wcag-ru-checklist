@@ -226,6 +226,10 @@ a:hover {
     position: relative;
 }
 
+.checklist__link {
+    color: red;
+}
+
 .checklist__division {
     border-left: 0.15rem solid red;
     border-bottom: 0.1rem solid red;
