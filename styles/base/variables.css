@@ -8,7 +8,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --c-text: rgba(224, 224, 224, 0.95);
+        --c-text: rgb(224, 224, 224);
         --c-main: rgb(25, 25, 25);
         --c-reverse: rgb(255, 255, 255);
         --c-accent: rgb(255, 235, 205);
