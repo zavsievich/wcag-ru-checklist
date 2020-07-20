@@ -35,6 +35,12 @@ a:hover {
     text-decoration-style: dashed;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    a, button {
+        transition: none !important;
+    }
+}
+
 *:focus {
     outline: 0.2em solid var(--c-brand);
     outline-offset: 0.1em;
