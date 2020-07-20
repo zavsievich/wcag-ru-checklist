@@ -9,6 +9,13 @@ html {
     scroll-behavior: smooth;
 }
 
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
 @media (min-width: 320px) {
     html {
         font-size: 125% !important;
