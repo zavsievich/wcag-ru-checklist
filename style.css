@@ -284,17 +284,13 @@ a:hover {
 
 .no-js .checklist__item {
     opacity: 1 !important;
+    pointer-events: initial;
 }
 
-/* .checklist__item {
+.checklist__item.inactive {
     opacity: 0.3;
     pointer-events: none;
 }
-
-.checklist__item.active {
-    opacity: 1;
-    pointer-events: initial;
-} */
 
 .checklist__item-label {
     position: relative;

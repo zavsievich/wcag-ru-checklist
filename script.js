@@ -11,8 +11,8 @@ function filters() {
     const filtersItemsList = Array.prototype.slice.call(document.querySelectorAll('[data-level]'));
     let chosenItems = [];
 
-    filtersBtn.addEventListener('click', function() {
-        if(filtersWrap.dataset.filters === 'close') {
+    filtersBtn.addEventListener('click', function () {
+        if (filtersWrap.dataset.filters === 'close') {
             openFilters();
         } else {
             closeFilters();
@@ -30,37 +30,36 @@ function filters() {
     }
 
     filtersCboxList.forEach(item => {
-        item.addEventListener('change', function(e) {
+        item.addEventListener('change', function (e) {
             let chosenLevel = e.target.dataset.cbox;
-            if(chosenItems.includes(chosenLevel)) {
-                chosenItems.shift(chosenLevel);
-            } else {
-                chosenItems.push(chosenLevel);
-            }
+            filtersItemsList.forEach(item => {
+                if(item.dataset.level === chosenLevel) {
+                    item.classList.toggle('inactive');
+                }
+            })
+            console.log();
+            
+            
+            // if (chosenItems.includes(chosenLevel)) {
+            //     chosenItems.splice(chosenItems.indexOf(chosenLevel), 1);
+
+            // } else {
+            //     chosenItems.push(chosenLevel);
+            // }
             // renderChosenElements(chosenItems);
-            
-            console.log(chosenItems);
-            
-            // toggleItemsVisibility(itemsToShow);
+
+            // console.log(chosenItems);
+
+            // toggleItemsVisibility(chosenItems);
         })
     });
 
     // function toggleItemsVisibility(level) {
     //     filtersItemsList.forEach(item => {
-    //         // console.log(item.dataset.level === level);
     //         if(item.dataset.level === level) {
     //             item.classList.toggle('active');
     //         }
-            
-    //         // if(item.dataset.level === level) {
-    //         //     item.classlist.toggle('inactive');
-    //         //     console.log('TRUE');
-    //         // } else {
-    //         //     console.log('WHAT');
-                
-    //         // }
     //     });
-    //     // console.log(filtersItemsList);
     // }
 }
 
