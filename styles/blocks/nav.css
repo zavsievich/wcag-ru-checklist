@@ -1,0 +1,28 @@
+.nav {
+    /* padding-left: 0.8rem; */
+    /* border-bottom: 0.1rem solid var(--c-accent); */
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+}
+
+.nav__item {
+    margin-left: 5%;
+    align-items: center;
+}
+
+.nav__item:first-child {
+    margin-left: 0;
+}
+
+@media (max-width: 1000px) {
+    .nav__list {
+        flex-direction: column;
+    }
+    .nav__item {
+        margin-left: 0;
+        margin-bottom: 1em;
+    }
+}

@@ -1,0 +1,24 @@
+.hero {
+    padding: 3rem 0 2rem;
+}
+
+.hero__title {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.hero__note {
+    border: 0.1rem solid var(--c-accent);
+    border-left: 0.15rem solid var(--c-accent);
+    border-radius: 0.2em;
+    padding: 0.75rem;
+    padding-left: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero__warning {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+}

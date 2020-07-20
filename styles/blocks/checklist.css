@@ -1,0 +1,111 @@
+.checklist__section {
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 1000px) {
+    .checklist__section:target {
+        margin-top: -(var(--header-height));
+        padding-top: var(--header-height);
+    }
+}
+
+.checklist__top {
+    padding-bottom: 0.5rem;
+    max-width: 80%;
+}
+
+.checklist__title {
+    position: relative;
+}
+
+.checklist__link {
+    color: var(--c-accent);
+}
+
+.checklist__division {
+    border-left: 0.15rem solid var(--c-accent);
+    border-bottom: 0.1rem solid var(--c-accent);
+    border-bottom-left-radius: 0.2rem;
+    padding-left: 0.8rem;
+    margin-bottom: 3rem;
+}
+
+.checklist__header {
+    padding-bottom: 0.8rem;
+}
+
+.no-js .checklist__item {
+    opacity: 1 !important;
+    pointer-events: initial;
+}
+
+.checklist__item.inactive {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.checklist__item-label {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.checklist__item-label:focus-within {
+    text-decoration: underline;
+}
+
+.checklist__item-title {
+    margin-bottom: 0.5em;
+}
+
+.checklist__item-subtitle {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.checklist__item-hidden {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.checklist__item-hidden:focus {
+    outline: none;
+}
+
+.checklist__item-input {
+    position: relative;
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 0.2rem solid currentColor;
+    border-radius: 0.4em;
+    margin-right: 0.7em;
+    flex: 0 0 1.5rem;
+}
+
+.checklist__item-hidden:focus+.checklist__item-input {
+    outline: 0.2em dashed var(--c-accent);
+    outline-offset: 0.1em;
+}
+
+.checklist__item-input+.checklist__item-desc {
+    flex: 1 0 calc(100% - 44px);
+}
+
+.checklist__item-hidden:checked+.checklist__item-input::before {
+    content: "";
+    position: absolute;
+    width: 65%;
+    height: 45%;
+    border-left: 0.2em solid var(--c-accent);
+    border-bottom: 0.2em solid var(--c-accent);
+    color: var(--c-reverse);
+    border-bottom-left-radius: 0.1em;
+    transform: translate(-50%, -50%) rotate(-50deg);
+    left: 50%;
+    top: 40%;
+}
