@@ -9,7 +9,6 @@ function filters() {
     const filtersBtn = filtersWrap.querySelector('[data-filters-btn]');
     const filtersCboxList = Array.prototype.slice.call(filtersWrap.querySelectorAll('[data-cbox]'));
     const filtersItemsList = Array.prototype.slice.call(document.querySelectorAll('[data-level]'));
-    let chosenItems = [];
 
     filtersBtn.addEventListener('click', function () {
         if (filtersWrap.dataset.filters === 'close') {
@@ -37,30 +36,8 @@ function filters() {
                     item.classList.toggle('inactive');
                 }
             })
-            console.log();
-            
-            
-            // if (chosenItems.includes(chosenLevel)) {
-            //     chosenItems.splice(chosenItems.indexOf(chosenLevel), 1);
-
-            // } else {
-            //     chosenItems.push(chosenLevel);
-            // }
-            // renderChosenElements(chosenItems);
-
-            // console.log(chosenItems);
-
-            // toggleItemsVisibility(chosenItems);
         })
     });
-
-    // function toggleItemsVisibility(level) {
-    //     filtersItemsList.forEach(item => {
-    //         if(item.dataset.level === level) {
-    //             item.classList.toggle('active');
-    //         }
-    //     });
-    // }
 }
 
 filters();
