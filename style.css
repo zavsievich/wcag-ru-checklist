@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --header-height: 4.65rem;
+}
+
 html {
     font-size: 125% !important;
     scroll-behavior: smooth;
@@ -91,8 +95,16 @@ a:hover {
 }
 
 .header {
+    height: var(--header-height);
+}
+
+.header__fixed {
+    position: fixed;
+    background-color: white;
+    width: 100%;
     padding: 1.2rem 0;
     border-bottom: 0.15rem solid red;
+    z-index: 1;
 }
 
 .header__container {
