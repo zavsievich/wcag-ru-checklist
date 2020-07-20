@@ -1,8 +1,9 @@
 :root {
     --c-text: rgb(25, 25, 25);
-    --c-accent: rgb(255, 0, 0);
+    --c-brand: rgb(255, 0, 0);
     --c-main: rgb(255, 255, 255);
     --c-reverse: rgb(0, 0, 0);
+    --c-accent: rgb(25, 25, 25);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -10,6 +11,7 @@
         --c-text: rgb(255, 255, 255);
         --c-main: rgb(25, 25, 25);
         --c-reverse: rgb(255, 255, 255);
+        --c-accent: rgb(255, 235, 205);
     }
 }
 

@@ -31,18 +31,18 @@ a {
 }
 
 a:hover {
-    color: var(--c-accent);
+    color: var(--c-brand);
     text-decoration-style: dashed;
 }
 
 *:focus {
-    outline: 0.2em solid var(--c-accent);
+    outline: 0.2em solid var(--c-brand);
     outline-offset: 0.1em;
     text-decoration: none;
 }
 
 .hidden-link {
-    color: var(--c-accent);
+    color: var(--c-brand);
     position: absolute;
     font-size: 2rem;
     transform: translateY(-120%);
@@ -79,7 +79,7 @@ a:hover {
 }
 
 .note__warning {
-    color: var(--c-accent);
+    color: var(--c-brand);
     text-transform: uppercase;
     font-weight: bold;
 }

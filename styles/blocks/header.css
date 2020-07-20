@@ -1,7 +1,7 @@
 .header__fixed {
     background-color: var(--c-main);
     padding: 1.2rem 0;
-    border-bottom: 0.15rem solid var(--c-accent);
+    border-bottom: 0.15rem solid var(--c-brand);
 }
 
 @media (min-width: 1000px) {
@@ -58,7 +58,7 @@
     list-style: none;
     padding: 0.2em 0.5em;
     background-color: var(--c-main);
-    border: 0.1em solid var(--c-accent);
+    border: 0.1em solid var(--c-brand);
 }
 
 .header__filters[data-filters="close"] .header__filters-list {
@@ -74,7 +74,7 @@
     font: inherit;
     font-weight: 600;
     background: none;
-    border: 0.1em solid var(--c-accent);
+    border: 0.1em solid var(--c-brand);
     border-radius: 0.3em;
     padding: 0.2em 0.5em;
     cursor: pointer;
@@ -134,7 +134,7 @@
 }
 
 .header__filters-hidden:focus+.header__filters-input {
-    outline: 0.1em solid var(--c-accent);
+    outline: 0.1em solid var(--c-brand);
     outline-offset: 0.1em;
 }
 
@@ -143,8 +143,8 @@
     position: absolute;
     width: 65%;
     height: 45%;
-    border-left: 0.13em solid var(--c-accent);
-    border-bottom: 0.13em solid var(--c-accent);
+    border-left: 0.13em solid var(--c-brand);
+    border-bottom: 0.13em solid var(--c-brand);
     color: var(--c-reverse);
     border-bottom-left-radius: 0.1em;
     transform: translate(-50%, -50%) rotate(-50deg);

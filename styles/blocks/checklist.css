@@ -16,15 +16,16 @@
 
 .checklist__title {
     position: relative;
+    font-size: 1.5rem;
 }
 
 .checklist__link {
-    color: var(--c-accent);
+    color: var(--c-brand);
 }
 
 .checklist__division {
-    border-left: 0.15rem solid var(--c-accent);
-    border-bottom: 0.1rem solid var(--c-accent);
+    border-left: 0.15rem solid var(--c-brand);
+    border-bottom: 0.1rem solid var(--c-brand);
     border-bottom-left-radius: 0.2rem;
     padding-left: 0.8rem;
     margin-bottom: 3rem;
@@ -32,6 +33,10 @@
 
 .checklist__header {
     padding-bottom: 0.8rem;
+}
+
+.checklist__caption {
+    font-size: 1.4rem;
 }
 
 .no-js .checklist__item {
@@ -58,6 +63,9 @@
 
 .checklist__item-title {
     margin-bottom: 0.5em;
+    font-size: 1.2rem;
+    color: var(--c-accent);
+    letter-spacing: 0.03em;
 }
 
 .checklist__item-subtitle {
@@ -88,7 +96,7 @@
 }
 
 .checklist__item-hidden:focus+.checklist__item-input {
-    outline: 0.2em dashed var(--c-accent);
+    outline: 0.2em dashed var(--c-brand);
     outline-offset: 0.1em;
 }
 
@@ -101,8 +109,8 @@
     position: absolute;
     width: 65%;
     height: 45%;
-    border-left: 0.2em solid var(--c-accent);
-    border-bottom: 0.2em solid var(--c-accent);
+    border-left: 0.2em solid var(--c-brand);
+    border-bottom: 0.2em solid var(--c-brand);
     color: var(--c-reverse);
     border-bottom-left-radius: 0.1em;
     transform: translate(-50%, -50%) rotate(-50deg);
