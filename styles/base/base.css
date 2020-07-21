@@ -47,6 +47,13 @@ a:hover {
     }
 }
 
+@media print {
+    a[href^="http://"]::after,
+    a[href^="https://"]::after {
+      content: " (" attr(href) ")";
+    }
+  }
+
 *:focus {
     outline: 0.2em solid var(--c-brand);
     outline-offset: 0.1em;
